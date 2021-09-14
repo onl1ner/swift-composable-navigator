@@ -62,6 +62,8 @@ public struct Root<Builder: PathBuilder>: View {
         pathBuilder.build(
           pathElement: rootPathComponent
         )
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
       }
       .environment(
         \.currentScreenID,
